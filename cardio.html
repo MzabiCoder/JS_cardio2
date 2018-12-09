@@ -60,7 +60,35 @@
 
 
   // console.log(func('i love javascript'));
- 
+
+
+    let max='javasssssssscrippptttt'
+
+     let obj={};
+
+      let tab=max.split('');
+
+       tab.forEach(val=>{
+        
+         if (!obj[val]) obj[val]=1 
+         
+         else obj[val]++;
+        
+       })
+
+       console.log(obj)
+
+       max2=0;
+       max3=0;
+
+       for (let char in obj){
+
+      if (obj[char]>max2) {max2=obj[char]; max3=char}
+       }
+  
+        console.log(max2);
+        console.log(max3);
+
  
 
     
