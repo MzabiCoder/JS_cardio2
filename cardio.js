@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cardio2</title>
-</head>
-<body>
 
-    
-
-
-
- <script>
 
  
   // reverse String 
@@ -45,7 +31,23 @@
 //    console.log(parseInt(val.toString().split('').reverse().join(''))*Math.sign(val));
    
  
+
+  //  function func(str){
+      
+    
+  //   return str
+  //          .toLowerCase()
+  //          .split(' ')
+  //          .map((val)=>{
+  //          return  val.charAt(0).toUpperCase()+val.slice(4)
+  //          })
+
+  
+   
+
+  // }
+
+
+  // console.log(func('i love javascript'));
  
- </script>   
-</body>
-</html>
+ 
