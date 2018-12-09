@@ -91,14 +91,36 @@
 
     // longest word in a phrase
 
-    let val='hellow, peoplelee, my Name is nabil'
+  //   let val='hellow, peoplelee, my Name is nabil'
 
-     tab=val.split(' ');
+  //    tab=val.split(' ');
 
-    const final=val.toLowerCase().match(/[a-z]+/g)
+  //   const final=val.toLowerCase().match(/[a-z]+/g)
 
-  final.sort((a,b)=>b.length-a.length)
-  console.log(final[0])
+  // final.sort((a,b)=>b.length-a.length)
+  // console.log(final[0])
+
+  // chunk and array
+
+   const chunk=(a,b)=>{
+  
+    res=[];
+  i=0;
+    while(i<a.length){
+
+      res.push(a.slice(i,i+b));
+   
+      i=i+3;
+    }
+ 
+   //console.log(res);
+
+    console.log( res.reduce((a,b)=>{
+       return a.concat(b);
+     })) 
+   }
+
+   chunk([1,2,3,4,5,6,7,4,5],4)
 
       
    
