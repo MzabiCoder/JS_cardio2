@@ -62,33 +62,49 @@
   // console.log(func('i love javascript'));
 
 
-    let max='javasssssssscrippptttt'
+    // let max='javasssssssgitscrippptttt'
 
-     let obj={};
+    //  let obj={};
 
-      let tab=max.split('');
+    //   let tab=max.split('');
 
-       tab.forEach(val=>{
+    //    tab.forEach(val=>{
         
-         if (!obj[val]) obj[val]=1 
+    //      if (!obj[val]) obj[val]=1 
          
-         else obj[val]++;
+    //      else obj[val]++;
         
-       })
+    //    })
 
-       console.log(obj)
+    //    console.log(obj)
 
-       max2=0;
-       max3=0;
+    //    max2=0;
+    //    max3=0;
 
-       for (let char in obj){
+    //    for (let char in obj){
 
-      if (obj[char]>max2) {max2=obj[char]; max3=char}
-       }
+    //   if (obj[char]>max2) {max2=obj[char]; max3=char}
+    //    }
   
-        console.log(max2);
-        console.log(max3);
+    //     console.log(max2);
+    //     console.log(max3);
 
+    // longest word in a phrase
+
+    let val='hellow, peoplelee, my Name is nabil'
+
+     tab=val.split(' ');
+
+    const final=val.toLowerCase().match(/[a-z]+/g)
+
+  final.sort((a,b)=>b.length-a.length)
+  console.log(final[0])
+
+      
+   
+     
+
+    
  
 
     
