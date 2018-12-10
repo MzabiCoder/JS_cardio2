@@ -192,32 +192,48 @@
 
 //    fil([-1,150,190,170,-1,-1,160,180]) -->
 
- const char=(vale)=>{
+//  const char=(vale)=>{
 
- let tab=vale.split('');
- // console.log(tab);
+//  let tab=vale.split('');
+//  // console.log(tab);
 
- let compare=vale.charCodeAt(0);
- let missing;
+//  let compare=vale.charCodeAt(0);
+//  let missing;
 
- tab.map((val,i)=>{
+//  tab.map((val,i)=>{
 
-  if (vale.charCodeAt(i)=== compare){
-    ++compare
-  }else {
-    missing=String.fromCharCode(compare)
-  }
+//   if (vale.charCodeAt(i)=== compare){
+//     ++compare
+//   }else {
+//     missing=String.fromCharCode(compare)
+//   }
 
-  console.log(missing);
+//   console.log(missing);
 
- })
+//  })
 
 
 
- 
+   
   
- }
-  char('abce')
+//  }
+//   char('abce')
+
+
+
+ //let x={a:1,b:2};
+
+
+Array.prototype.print=()=>{
+   this.forEach(element => {
+     console.log(element)
+   });
+}
+[1,2,3,4,5].print();
+
+  
+
+
 
 
     
