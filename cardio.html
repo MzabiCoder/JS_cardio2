@@ -150,16 +150,48 @@
 
   
 
-   
 
-   function add(...rest){
-   
-   return rest.reduce((a,b)=>a+b)
-   
-  }
+//    function add(tab,...rest){
+//   let res=[];
 
-   console.log(add(2,5,6,7));
+//     console.log(tab.filter(val => !rest.includes(val) )) 
+
+  
+
+//   }
+
+// add([2,6,6,3,4,6,6,2,'hello'],2,6) 
+// <!-- 
+// const fil=(tab)=>{
+
+//   let value=[];
+//   let tree=[];
  
+  
+
+
+//   for (let i=0;i<tab.length;i++){
+//      (tab[i]===-1) ? tree.push(i) : value.push(tab[i])
+//   }
+
+//   let nvalue=value.sort((a,b)=>a-b);
+ 
+
+//     tree.forEach(el => {
+      
+//       nvalue.splice(el,0,'-1');
+
+//     });
+
+  
+//    console.log(nvalue);
+
+// }
+   
+   
+
+//    fil([-1,150,190,170,-1,-1,160,180]) -->
+
 
     
     </script>
