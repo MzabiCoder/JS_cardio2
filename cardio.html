@@ -46,9 +46,32 @@
 
   <script>
 
-
+const filter=document.querySelector('#filter')
 const form=document.querySelector('#addForm')
 const list=document.querySelector('#items')
+
+filter.addEventListener('keyup',(e)=>{
+
+  var text=e.target.value.toLowerCase()
+  //console.log(text)
+
+  let items=list.getElementsByTagName('li');
+ // console.log(list);
+
+  Array.from(items).forEach(item=>{
+    var name=item.firstChild.textContent;
+   // console.log(name)
+   if (name.toLowerCase().indexOf(text)!= -1) item.style.display="block"
+   else item.style.display="none"
+  })
+
+
+
+
+
+ 
+})
+
 
 form.addEventListener('submit',(e)=>{
   e.preventDefault();
