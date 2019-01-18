@@ -20,4 +20,8 @@
 //     reerange('aaabc'); 
 
 
+// let val=-1234
 
+//  //let tab=val.toString()
+
+//  console.log(parseInt(val.toString().split('').reverse().join(''))*Math.sign(val))
