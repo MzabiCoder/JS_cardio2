@@ -47,36 +47,60 @@
 
 // console.log(test('i love javsscript'))
 
- change=(str)=>{
+//  change=(str)=>{
 
-   let tab=str.split('')
-   let obj={}
-   let maxv=0;
-   let maxn='';
+//    let tab=str.split('')
+//    let obj={}
+//    let maxv=0;
+//    let maxn='';
 
-    for (let val of tab){
-      if (obj[val]){
-        obj[val]++
-      }else{
-        obj[val]=1
-      }
-    }
+//     for (let val of tab){
+//       if (obj[val]){
+//         obj[val]++
+//       }else{
+//         obj[val]=1
+//       }
+//     }
 
-     //return obj
+//      //return obj
 
-      for (let char in obj){
-        if (obj[char]> maxv){
-           maxv=obj[char]
-           maxn=char
-        }
+//       for (let char in obj){
+//         if (obj[char]> maxv){
+//            maxv=obj[char]
+//            maxn=char
+//         }
         
-      }
+//       }
 
-      return maxv
- }
+//       return maxv
+//  }
 
-  console.log(change('javascripta'))
+  //console.log(change('javascripta'))
 
+
+
+
+  //let str='i love javascript more than others'
+
+   test=(str)=>{
+    let tab=str.toLowerCase().match(/[a-z0-9]+/g)
+
+     //console.log(tab);
+ 
+
+      const sort=tab.sort((a,b)=>b.length-a.length)
+
+     // return sort[0]
+
+      const filter=sort.filter(word=>word.length === sort[0].length)
+
+     filter.length===1 ?  console.log(filter[0]) : console.log(filter)
+       
+
+   }
+
+    console.log(test('i love javascriptsldkjfglsdjkglfs abcdefghig than others klmnopqrst'))
+   
 
 
 
