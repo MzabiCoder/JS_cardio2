@@ -25,3 +25,26 @@
 //  //let tab=val.toString()
 
 //  console.log(parseInt(val.toString().split('').reverse().join(''))*Math.sign(val))
+
+// str=
+
+//  let tab2=str.toLowerCase().split(' ')
+//  //console.log(tab);
+//     // for (i=0;i<tab.length;i++) {
+//     //   tab[i]=tab[i].charAt(0).toUpperCase() + tab[i].slice(1);
+//     // }
+
+
+    test=(str)=>{
+     return str
+      .toLowerCase()
+      .split(' ')
+      .map(tab=>tab[0].toUpperCase() + tab.substr(1));
+
+     //console.log(tab2);
+    }
+
+
+console.log(test('i love javsscript'))
+
+  
