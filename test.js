@@ -35,16 +35,60 @@
 //     // }
 
 
-    test=(str)=>{
-     return str
-      .toLowerCase()
-      .split(' ')
-      .map(tab=>tab[0].toUpperCase() + tab.substr(1));
+//     test=(str)=>{
+//      return str
+//       .toLowerCase()
+//       .split(' ')
+//       .map(tab=>tab[0].toUpperCase() + tab.substr(1));
 
-     //console.log(tab2);
+//      //console.log(tab2);
+//     }
+
+
+// console.log(test('i love javsscript'))
+
+ change=(str)=>{
+
+   let tab=str.split('')
+   let obj={}
+   let maxv=0;
+   let maxn='';
+
+    for (let val of tab){
+      if (obj[val]){
+        obj[val]++
+      }else{
+        obj[val]=1
+      }
     }
 
+     //return obj
 
-console.log(test('i love javsscript'))
+      for (let char in obj){
+        if (obj[char]> maxv){
+           maxv=obj[char]
+           maxn=char
+        }
+        
+      }
+
+      return maxv
+ }
+
+  console.log(change('javascripta'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
