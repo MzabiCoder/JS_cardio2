@@ -82,29 +82,71 @@
 
   //let str='i love javascript more than others'
 
-   test=(str)=>{
-    let tab=str.toLowerCase().match(/[a-z0-9]+/g)
+  //  test=(str)=>{
+  //   let tab=str.toLowerCase().match(/[a-z0-9]+/g)
 
      //console.log(tab);
  
 
-      const sort=tab.sort((a,b)=>b.length-a.length)
+  //     const sort=tab.sort((a,b)=>b.length-a.length)
 
-     // return sort[0]
+  //    // return sort[0]
 
-      const filter=sort.filter(word=>word.length === sort[0].length)
+  //     const filter=sort.filter(word=>word.length === sort[0].length)
 
-     filter.length===1 ?  console.log(filter[0]) : console.log(filter)
+  //    filter.length===1 ?  console.log(filter[0]) : console.log(filter)
        
 
-   }
+  //  }
 
-    console.log(test('i love javascriptsldkjfglsdjkglfs abcdefghig than others klmnopqrst'))
+  // //   console.log(test('i love javascriptsldkjfglsdjkglfs abcdefghig than others klmnopqrst'))
+   
+
+  //  chunk=(tab,ind)=>{
+    
+  //    let res=[]
+  //    let i=0
+
+   
+  //   while(i<=tab.length-1){
+
+  //    res.push(tab.slice(i,i+ind))
+  //    i+=ind
+  //   }
+
+  //   //console.log(res);
+
+  //    let res2=res.reduce((a,b)=>{
+
+  //     return a.concat(b)
+  //    })
+
+  //     console.log(res2);
    
 
 
+  //  }
+
+  //  chunk([1,2,3,4,5,6,7,8,9,10,11,9],3)
 
 
+
+isnagram=(str1,str2)=>{
+
+  //   let tab2=str2.toLowerCase().match(/[a-z,' ']+/g)
+  //   let tab1=str1.toLowerCase().match(/[a-z,' ']+/g)
+
+  //  console.log(tab1.sort())
+  //  console.log(tab2.sort())
+   
+
+
+   
+
+}
+
+
+isnagram('elbow','Below')
 
 
 
