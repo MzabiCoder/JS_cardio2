@@ -131,30 +131,72 @@
 
 
 
-isnagram=(str1,str2)=>{
+// isnagram=(str1,str2)=>{
 
-  //   let tab2=str2.toLowerCase().match(/[a-z,' ']+/g)
-  //   let tab1=str1.toLowerCase().match(/[a-z,' ']+/g)
+//   //   let tab2=str2.toLowerCase().match(/[a-z,' ']+/g)
+//   //   let tab1=str1.toLowerCase().match(/[a-z,' ']+/g)
 
-  //  console.log(tab1.sort())
-  //  console.log(tab2.sort())
+//   //  console.log(tab1.sort())
+//   //  console.log(tab2.sort())
    
 
 
    
 
+// }
+
+
+// isnagram('elbow','Below')
+
+// test=(...rest)=>{
+
+//  //console.log(tab.toString().split('').reduce((a,b)=>a+b))
+//  //let args=Array.prototype.sice.call(arguments)
+
+//  return rest.reduce((a,b)=>a+b);
+
+  
+
+// }
+
+
+// // console.log(test(4,4,4,4))
+
+
+// seek=(tab,...rest)=>{
+//  //console.log(tab);
+//  //console.log(rest);
+
+
+//      return tab.filter(val=>(rest.indexOf(val) === -1))
+     
+
+// }
+// //seek([2,3,4,6,6,'hello'],2,6)
+
+// console.log(seek([2,3,4,6,6,'hello'],2,6,'hello'))
+
+
+
+missin=(str)=>{
+
+  let compare= str.charCodeAt(0);
+  //console.log(missing)
+
+  let missing='';
+
+  str.split('').map((char,i)=>{
+    if (str.charCodeAt(i) === compare){
+      ++compare
+    }else {
+      missing=String.fromCharCode(compare)
+    }
+  })
+
+
+ // return tab
 }
 
 
-isnagram('elbow','Below')
-
-
-
-
-
-
-
-
-
-
+console.log(missin('xsllokdgsrwd'))
   
