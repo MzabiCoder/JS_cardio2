@@ -2,9 +2,10 @@
   "name": "cardio2",
   "version": "1.0.0",
   "description": "",
-  "main": "test.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon app"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,22 @@
   },
   "homepage": "https://github.com/Mzabi1982/JS_cardio2#readme",
   "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "*",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "jsonwebtoken": "^8.4.0"
+    "express-ejs-layouts": "^2.5.0",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "jsonwebtoken": "^8.4.0",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
   }
 }
