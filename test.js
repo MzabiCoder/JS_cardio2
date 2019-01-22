@@ -163,40 +163,108 @@
 // // console.log(test(4,4,4,4))
 
 
-// seek=(tab,...rest)=>{
-//  //console.log(tab);
-//  //console.log(rest);
+// // seek=(tab,...rest)=>{
+// //  //console.log(tab);
+// //  //console.log(rest);
 
 
-//      return tab.filter(val=>(rest.indexOf(val) === -1))
+// //      return tab.filter(val=>(rest.indexOf(val) === -1))
      
 
+// // }
+// // //seek([2,3,4,6,6,'hello'],2,6)
+
+// // console.log(seek([2,3,4,6,6,'hello'],2,6,'hello'))
+
+
+
+// missin=(str)=>{
+
+//   let compare= str.charCodeAt(0);
+//   //console.log(missing)
+
+//   let missing;
+
+//   str.split('').map((char,i)=>{
+//     if (char.charCodeAt(0) === compare){
+//       ++compare
+//     }else {
+//       missing=String.fromCharCode(compare)
+//     }
+//   })
+
+
+//   return missing
 // }
-// //seek([2,3,4,6,6,'hello'],2,6)
-
-// console.log(seek([2,3,4,6,6,'hello'],2,6,'hello'))
 
 
+// console.log(missin('efgijkl'))
 
-missin=(str)=>{
 
-  let compare= str.charCodeAt(0);
-  //console.log(missing)
 
-  let missing='';
+const express=require('express')
+const jwt=require('jsonwebtoken')
 
-  str.split('').map((char,i)=>{
-    if (str.charCodeAt(i) === compare){
-      ++compare
-    }else {
-      missing=String.fromCharCode(compare)
+const app=express();
+
+app.get('/api',(req,res)=>{
+  res.json({
+    message:'welcom to the api'
+  })
+})
+
+
+app.post('/api/posts',verify,(req,res)=>{
+
+  jwt.verify(req.token,'mamama',(err,data)=>{
+    if (err){
+      res.sendStatus(403)
+    }else{
+      res.json({
+        message:'post created...',
+        data
+      })
     }
   })
 
+})
 
- // return tab
+
+app.post('/api/login',(req,res)=>{
+// mock user
+const user={
+  id:1,
+  username:'brad@gmail'
 }
+  jwt.sign({user},'mamama',(er,token)=>{
+    res.json({
+      token
+    })
+  })
+})
 
 
-console.log(missin('xsllokdgsrwd'))
+// verify token
+
+function verify(req,res,next){
+
+  const bearerHeader=req.headers['authorization']
+  if (typeof bearerHeader !== 'undefined' ){
+     const bearer=bearerHeader.split(' ')
+     const gettoken =bearer[1]
+     req.token=gettoken
+
+     next()
+
+  }else{
+   // res.json('sir t9awed');
+   res.sendStatus(403)
+  }
+
+}
+app.listen(3000,()=>{
+  console.log(`server is listenning on port 3000...`)
+})
+
+
   
