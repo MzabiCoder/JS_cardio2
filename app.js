@@ -280,9 +280,18 @@
    const mongo=require('mongodb')
    const mongoose=require('mongoose')
    const expressLayouts=require('express-ejs-layouts')
-    mongoose.connect('mongodb://nabil:nabil1982@cluster1-shard-00-00-clmu9.mongodb.net:27017,cluster1-shard-00-01-clmu9.mongodb.net:27017,cluster1-shard-00-02-clmu9.mongodb.net:27017/test?ssl=true&replicaSet=Cluster1-shard-0&authSource=admin&retryWrites=true')
+   //const key=require('./mongokey')
    const app=express();
-  const db=mongoose.connection
+   const db=mongoose.connection
+    mongoose.connect('mongodb://nabil:nabil1982@cluster1-shard-00-00-clmu9.mongodb.net:27017,cluster1-shard-00-01-clmu9.mongodb.net:27017,cluster1-shard-00-02-clmu9.mongodb.net:27017/test?ssl=true&replicaSet=Cluster1-shard-0&authSource=admin&retryWrites=true')
+
+
+    // const db=require('./mongokey').mongoKEY
+    // mongoose.connect(db,{useNewUrlParser:true})
+    // .then(()=>console.log('mongo db connected'))
+    // .catch(er=>console.log(er))
+   
+  
 
  app.use(expressLayouts)
  app.set('view engine','ejs')
