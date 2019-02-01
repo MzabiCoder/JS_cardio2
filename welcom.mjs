@@ -1,0 +1,1 @@
+export const welcom ="Welcom from welcom.mj"

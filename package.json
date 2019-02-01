@@ -4,8 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "echo \"Error: no test specified\" && exit 1",
-    "dev":"nodemon app"
+    "start": "nodemon --experimental-modules mjs",
+    "dev":"nodemon app",
+    "mjs":"nodemon --experimental-modules mjs"
   },
   "repository": {
     "type": "git",
