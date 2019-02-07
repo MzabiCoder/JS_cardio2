@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fname": "jhon",
+      "lname": "dow",
+      "email": "jhonm@gmail.com",
+      "age": "34",
+      "compId": "1"
+    },
+    {
+      "id": "2",
+      "fname": "mon",
+      "lname": "dow",
+      "email": "mon@gmail.com",
+      "age": "34",
+      "compId": "2"
+    },
+    {
+      "id": "3",
+      "fname": "con",
+      "lname": "dow",
+      "email": "con@gmail.com",
+      "age": "34",
+      "compId": "3"
+    },
+    {
+      "id": "4",
+      "fname": "boom",
+      "lname": "dow",
+      "email": "boom@gmail.com",
+      "age": "34",
+      "compId": "1"
+    },
+    {
+      "id": "5",
+      "fname": "assiya",
+      "lname": "fannane",
+      "email": "loom@gmail.com",
+      "age": "34",
+      "compId": "2"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "name": "apple",
+      "dexcription": "tech frim apple"
+    },
+    {
+      "id": "2",
+      "name": "micro",
+      "dexcription": "tech frim micro"
+    },
+    {
+      "id": "3",
+      "name": "google",
+      "dexcription": "tech frim googlr"
+    }
+  ]
+}

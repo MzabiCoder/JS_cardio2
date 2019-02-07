@@ -267,46 +267,60 @@
 // })
 
 
-   const express=require('express')
-  //const path=require('path')
-  //const cookieParser=require('cookie-parser')
-  const bodyParser=require('body-parser')
-  //const exphs=require('express-handlebars')
-  const validator=require('express-validator')
-  const flas=require('connect-flash')
-   const session=require('express-session')
-   const passport=require('passport')
-   const LocalStrategy=require('passport-local').Strategy;
-   const mongo=require('mongodb')
-   const mongoose=require('mongoose')
-   const expressLayouts=require('express-ejs-layouts')
-   //const key=require('./mongokey')
-   const app=express();
-   const db=mongoose.connection
-    mongoose.connect('mongodb://nabil:nabil1982@cluster1-shard-00-00-clmu9.mongodb.net:27017,cluster1-shard-00-01-clmu9.mongodb.net:27017,cluster1-shard-00-02-clmu9.mongodb.net:27017/test?ssl=true&replicaSet=Cluster1-shard-0&authSource=admin&retryWrites=true')
+//    const express=require('express')
+//   //const path=require('path')
+//   //const cookieParser=require('cookie-parser')
+//   const bodyParser=require('body-parser')
+//   //const exphs=require('express-handlebars')
+//   const validator=require('express-validator')
+//   const flas=require('connect-flash')
+//    const session=require('express-session')
+//    const passport=require('passport')
+//    const LocalStrategy=require('passport-local').Strategy;
+//    const mongo=require('mongodb')
+//    const mongoose=require('mongoose')
+//    const expressLayouts=require('express-ejs-layouts')
+//    //const key=require('./mongokey')
+//    const app=express();
+//    const db=mongoose.connection
+//     mongoose.connect('mongodb://nabil:nabil1982@cluster1-shard-00-00-clmu9.mongodb.net:27017,cluster1-shard-00-01-clmu9.mongodb.net:27017,cluster1-shard-00-02-clmu9.mongodb.net:27017/test?ssl=true&replicaSet=Cluster1-shard-0&authSource=admin&retryWrites=true')
 
 
-    // const db=require('./mongokey').mongoKEY
-    // mongoose.connect(db,{useNewUrlParser:true})
-    // .then(()=>console.log('mongo db connected'))
-    // .catch(er=>console.log(er))
+//     // const db=require('./mongokey').mongoKEY
+//     // mongoose.connect(db,{useNewUrlParser:true})
+//     // .then(()=>console.log('mongo db connected'))
+//     // .catch(er=>console.log(er))
    
   
 
- app.use(expressLayouts)
- app.set('view engine','ejs')
+//  app.use(expressLayouts)
+//  app.set('view engine','ejs')
 
-  app.use('/',require('./routes/index'))
-  app.use('/users',require('./routes/users'))
+//   app.use('/',require('./routes/index'))
+//   app.use('/users',require('./routes/users'))
 
 
-  mongoose.connection.once('open',()=>{
-    console.log('connected to mongoATlAS....')
-  })
+//   mongoose.connection.once('open',()=>{
+//     console.log('connected to mongoATlAS....')
+//   })
  
 
 
- const PORT=process.env.PORT || 3000
-  app.listen(PORT,()=>{
-    console.log(`app listening on port ${PORT}...`)
-  })
+//  const PORT=process.env.PORT || 3000
+//   app.listen(PORT,()=>{
+//     console.log(`app listening on port ${PORT}...`)
+//   })
+
+
+
+//  const fs=require('fs')
+//  const path=require('path')
+
+//   fs.readFile(path.join(__dirname,'/test','hello.txt'),'utf8',(err,data)=>{
+   
+//     if (err) throw err
+
+//     console.log(data)
+//   })
+
+ 
