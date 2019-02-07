@@ -323,4 +323,26 @@
 //     console.log(data)
 //   })
 
+
+const os=require('os')
+//
+
+// console.log(os.platform())
+// console.log(os.arch())
+// console.log(os.cpus())
+
+
+// console.log(os.freemem())
+// console.log(os.totalmem())
+
+
+// console.log(os.homedir())
+
+// const url=require('url')
+
+// const myUrl=new URL('http://nabilfannane?id=100&status=active')
+
+// console.log(myUrl.search)
+
+
  
