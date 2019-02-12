@@ -1,3 +1,6 @@
+import { validationResult } from "express-validator/check";
+
+//import { setupMaster } from "cluster";
 
 
 // reerange=(input)=>{
@@ -353,27 +356,60 @@
 //   console.log('server running...')
 // })
 
-const http=require('http')
-const path=require('path')
-const fs=require('fs')
-
-const server=http.createServer((req,res)=>{
-  console.log(req.url)
-  if (req.url==='/'){
-    res.end('<h1>hellow world</h1>')
-
-  }
-  if (req.url==='/app'){
-    res.end('<h1>hellow app</h1>')
-
-  }
-})
-
-const PORT=process.env.PORT || 5000
-
-server.listen(PORT,()=>{
-  console.log(`server is running on port ${PORT}`)
-})
 
 
- 
+
+//  function sum(){
+
+  //return  rest.reduce((a,b)=>a+b);
+
+  //return arguments;
+
+//   let tab=Array.from(arguments)
+//   let total=0;
+
+//    tab.forEach(val=>{
+//      total+=val
+//    })
+//  return total;
+
+//  }
+
+
+
+  
+
+
+
+// function sum(tab,...ser){
+// //  console.log(tab)
+// //  console.log(ser)
+
+//  return tab.filter(val=>{
+  
+//     return ser.indexOf(val)===-1
+
+//   })
+
+
+
+// }
+
+//  let indice=[]
+//  let res=[]
+
+// let tab=[-1,170,190,150,-1,-1,160,180]
+// let sorted=tab.sort((a,b)=>a-b)
+
+//   for (let i=0;i<tab.length;i++){
+     
+//      if (tab[i]===-1) {
+//       indice.push(i)
+//      }else{
+//        val.push(tab[i])
+//      }
+//   }
+
+  
+
+//  console.log(indice)
