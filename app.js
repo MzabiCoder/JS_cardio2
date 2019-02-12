@@ -1,5 +1,3 @@
-import { validationResult } from "express-validator/check";
-
 //import { setupMaster } from "cluster";
 
 
@@ -395,21 +393,35 @@ import { validationResult } from "express-validator/check";
 
 // }
 
-//  let indice=[]
-//  let res=[]
+// function sum(str){
+//  let compare=str.charCodeAt(0)
+//  let missing;
+ 
 
-// let tab=[-1,170,190,150,-1,-1,160,180]
-// let sorted=tab.sort((a,b)=>a-b)
+//    str.split('').map((char,i)=>{
+//    if (str.charCodeAt(i) == compare){
+//      compare++
+//    }
+//    else {
+//       missing=String.fromCharCode(compare)
+//    }
 
-//   for (let i=0;i<tab.length;i++){
-     
-//      if (tab[i]===-1) {
-//       indice.push(i)
-//      }else{
-//        val.push(tab[i])
-//      }
-//   }
+   
+//    })
 
-  
+//    return missing
+// }
 
-//  console.log(indice)
+// console.log(sum('abcdef'))
+
+//  //console.log(indice)
+
+
+tab=[50,60,60,45,71]
+
+let even=0
+let odd=0;
+ tab.forEach(val => val % 2 == 0 ?  even+=val : odd+=val );
+
+
+ console.log([even,odd])
