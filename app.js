@@ -398,30 +398,48 @@
 //  let missing;
  
 
-//    str.split('').map((char,i)=>{
-//    if (str.charCodeAt(i) == compare){
-//      compare++
-//    }
-//    else {
-//       missing=String.fromCharCode(compare)
-//    }
+// long=(str)=>{
 
-   
-//    })
+ 
 
-//    return missing
+//  let tab=str.split(',')
+  
+//    let sort=tab.sort((a,b)=>b.length-a.length)
+
+//    let longest=sort.filter(word=> word.length === sort[0].length)
+
+//    if (longest.length<=1)
+//     return sort[0].toString()
+//     else return longest
+
+
 // }
 
-// console.log(sum('abcdef'))
-
-//  //console.log(indice)
+//  console.log(long('hellowworld,askdjf,masdjkf,hellowworld,skjffsj'))
 
 
-tab=[50,60,60,45,71]
 
-let even=0
-let odd=0;
- tab.forEach(val => val % 2 == 0 ?  even+=val : odd+=val );
+const obj={
+  x:1,
+  get(){
+     let test=this
+    const inner=function(){
+      console.log(test.x)
+    }
+    inner()
+  }
+}
+
+obj.get();
+
+ 
+   
+    
+   
 
 
- console.log([even,odd])
+
+
+
+
+ 
