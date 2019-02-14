@@ -419,27 +419,47 @@
 
 
 
-const obj={
-  x:1,
-  get(){
-     let test=this
-    const inner=function(){
-      console.log(test.x)
-    }
-    inner()
-  }
-}
-
-obj.get();
-
+// const obj={
+//   x:1,
+//   get(){
+//      let test=this
+//     const inner=function(){
+//       console.log(test.x)
+//     }
+//     inner()
+//   }
+// }
  
-   
-    
-   
+
+// let data= [
+//   {
+//     Poster: 'skjfh',
+//     Title: 'They Call Me Spiderman',
+//     Type: 'movie',
+//     Year: 2016,
+//     imdbID: 398454
+//   },
+//   {
+//     Poster: 'skjfh',
+//     Title: 'They Call Me Spiderman',
+//     Type: 'movie',
+//     Year: 2016,
+//     imdbID: 398452
+//   },
+//   {
+//     Poster: 'skjfh',
+//     Title: 'They Call Spiderman',
+//     Type: 'movie',
+//     Year: 2016,
+//     imdbID: 398452
+//   }
+// ]
 
 
+ const resu=data.filter(val=>{
+   return val.Title.includes('Spiderman')
+ })
 
-
-
-
+  
+console.log(resu)
  
