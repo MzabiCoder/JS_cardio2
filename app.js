@@ -436,6 +436,47 @@
 
   //  console.log(maxcar('la vie, en rlksjf asdjfghas,adjfhgadf,adkadfoij,adosa lkjghjgjhghgdgfdgfdgf')) 
 
+    function format(str){
+      return str.toLowerCase()    
+       .replace(/[^\w]+/g,'')
+       .split('')
+       .sort()
+       .join('')
+    }
+     const isanagram=(str1,str2)=>{
+ 
+      return format(str1)===format(str2)
+
+
+     }
+
+     function letterChanges(str) {
+      
+      return str.toLowerCase().replace(/[a-z]/g, char => (
+        char == 'z' ? 'a' : String.fromCharCode(char.charCodeAt() + 1)
+      )).replace(/[aeiou]/g, vowel => vowel.toUpperCase());
+    }
 
    
+
+
+const obj={
+  x:1,
+  getX(){
+    
+    const inner=function(){
+      
+      console.log(this.x)
+    }
+    inner.bind(this)()
+  }
+}
+
+obj.getX()
+
+
+
+
+
+
 
