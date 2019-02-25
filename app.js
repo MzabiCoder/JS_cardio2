@@ -378,88 +378,19 @@
   
 
 
+  function capital(str){
 
-// function sum(tab,...ser){
-// //  console.log(tab)
-// //  console.log(ser)
-
-//  return tab.filter(val=>{
-  
-//     return ser.indexOf(val)===-1
-
-//   })
-
-
-
-// }
-
-// function sum(str){
-//  let compare=str.charCodeAt(0)
-//  let missing;
- 
-
-// long=(str)=>{
-
- 
-
-//  let tab=str.split(',')
-  
-//    let sort=tab.sort((a,b)=>b.length-a.length)
-
-//    let longest=sort.filter(word=> word.length === sort[0].length)
-
-//    if (longest.length<=1)
-//     return sort[0].toString()
-//     else return longest
-
-
-// }
-
-//  console.log(long('hellowworld,askdjf,masdjkf,hellowworld,skjffsj'))
-
-
-
-// const obj={
-//   x:1,
-//   get(){
-//      let test=this
-//     const inner=function(){
-//       console.log(test.x)
-//     }
-//     inner()
-//   }
-// }
- 
-
-// let data= [
-//   {
-//     Poster: 'skjfh',
-//     Title: 'They Call Me Spiderman',
-//     Type: 'movie',
-//     Year: 2016,
-//     imdbID: 398454
-//   },
-//   {
-//     Poster: 'skjfh',
-//     Title: 'They Call Me Spiderman',
-//     Type: 'movie',
-//     Year: 2016,
-//     imdbID: 398452
-//   },
-//   {
-//     Poster: 'skjfh',
-//     Title: 'They Call Spiderman',
-//     Type: 'movie',
-//     Year: 2016,
-//     imdbID: 398452
-//   }
-// ]
-
-
- const resu=data.filter(val=>{
-   return val.Title.includes('Spiderman')
- })
+    return str
+    .toLowerCase()
+    .split(' ')
+    .map(char=>char = char.charAt(0).toUpperCase()+char.substring(1))
+    .join(' ')
+    
 
   
-console.log(resu)
- 
+
+  }
+
+
+  console.log(capital('la vie est simple'))
+
