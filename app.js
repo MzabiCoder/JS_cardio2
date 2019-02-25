@@ -378,19 +378,64 @@
   
 
 
-  function capital(str){
+  // function capital(str){
 
-    return str
-    .toLowerCase()
-    .split(' ')
-    .map(char=>char = char.charAt(0).toUpperCase()+char.substring(1))
-    .join(' ')
+  //   return str
+  //   .toLowerCase()
+  //   .split(' ')
+  //   .map(char=>char = char.charAt(0).toUpperCase()+char.substring(1))
+  //   .join(' ')
     
 
   
 
-  }
+  // }
+
+  
 
 
-  console.log(capital('la vie est simple'))
+  //  function one(str){
+  //  let obj={}
+  //  let tab=str.split('')
+  //  let max=''
+  //  let val=''
+
+  //     tab.forEach(el => {
+  //        if (obj[el]){
+  //          obj[el]++
+  //        }else{
+  //          obj[el]=1
+  //        }
+  //     });
+      
+  //      for (let char in obj){
+  //        if (max<obj[char]){
+  //          max=obj[char]
+  //          val=char
+  //        }
+  //      }
+
+  //    console.log(max,val)
+
+  //  }
+
+  //match(/[a-z0-9]+/g) string.prototype
+
+  //  function  maxcar(str){
+     
+  //    const tab=str.toLowerCase().match(/[a-z0-9]+/g)
+  //     const sorted=tab.sort((a,b)=>b.length-a.length)
+
+  //     const filterr=sorted.filter(val=>val.length===sorted[0].length)
+  //      if (filterr.length>1){
+  //        return filterr
+  //      }    else {
+  //        return filterr[0]
+  //      }
+  //  }
+
+  //  console.log(maxcar('la vie, en rlksjf asdjfghas,adjfhgadf,adkadfoij,adosa lkjghjgjhghgdgfdgfdgf')) 
+
+
+   
 
