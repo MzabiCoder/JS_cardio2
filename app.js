@@ -450,6 +450,7 @@
 
      }
 
+
      function letterChanges(str) {
       
       return str.toLowerCase().replace(/[a-z]/g, char => (
@@ -457,24 +458,66 @@
       )).replace(/[aeiou]/g, vowel => vowel.toUpperCase());
     }
 
-   
+ 
+ //let str="1-2+3+13"
 
 
-const obj={
-  x:1,
-  getX(){
-    
-    const inner=function(){
+
+  // function change(str){
+
+  // let tab=[]
+  // let sum=0
+  
+
+  //  tab=str.split('')
+  //  //return tab.reduce((a,b)=>parseInt(a)+parseInt(b))
+
+  //   if ( tab.filter(val=>val=="-" || val=="+" ).length == 0 ){
+  //     return parseInt(str)
+  //   }else {
+
+  //     for (let i=0;i<tab.length;i++){
+        
+  //        if (tab[i]==='+'){
+  //          sum+=parseInt(tab[i+1])
+  //        }
+         
+  //        else if (tab[i]==='-'){
+  //         sum=sum-parseInt(tab[i+1])
+  //       } else{
+  //         sum+=parseInt(tab[i])
+  //       }
       
-      console.log(this.x)
-    }
-    inner.bind(this)()
+  //     }
+      
+  //     return sum
+  //    }
+
+  // }
+
+
+  // console.log(change("9+9-8"))
+
+  import Redux from 'redux'
+
+  const {createStore} = Redux
+  const initState={
+    todos:[],
+    posts:[]
   }
-}
 
-obj.getX()
+  function myreducer(state = initState,action){
 
+    console.log(action,state)
+    
+  }
+  const store=createStore(myreducer)
 
+  const todoAction={type:'ADD_TODO',todo:'buy milk'}
+
+  store.dispatch(initState)
+
+  
 
 
 

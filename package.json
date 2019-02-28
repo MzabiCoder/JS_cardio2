@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon --experimental-modules mjs",
-    "dev":"nodemon app",
-    "mjs":"nodemon --experimental-modules mjs"
+    "dev": "nodemon app",
+    "mjs": "nodemon --experimental-modules mjs"
   },
   "repository": {
     "type": "git",
@@ -35,6 +35,7 @@
     "mongoose": "*",
     "passport": "*",
     "passport-http": "*",
-    "passport-local": "*"
+    "passport-local": "*",
+    "redux": "^4.0.1"
   }
 }
