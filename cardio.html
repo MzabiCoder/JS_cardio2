@@ -4,53 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
-  <title>Animted</title>
+  <title>Document</title>
 </head>
 <style>
-#chain{
-  font-size: 4rem;
+ body{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .container{
+   text-align: center;
+   min-width: 300px;
+   height: 300px;
+   background: gray;
+   padding: 0 2rem;
+   border-left: solid red 2rem;
+ }
+
+.btn{
+  color:#f15025;
+  border:3px solid #ff34;
 }
+ .hex{
+   text-transform: capitalize;
+ }
+
+ #result{
+   font-size: 3rem;
+ }
 </style>
 <body>
 
-  <div id="chain" class="fa"></div>
+    <div class="container">
+      <h2 class="hex">this hex color is : <span id="result"></span> </h2>
+      <button class="btn">click</button>
+    </div>
   
 
+    <script>
+    const numbers=[0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F']
+    const btn=document.querySelector('.btn')
+    const result=document.querySelector('#result')
+    const body=document.querySelector('body')
 
-  <script>
-    //f127
-    function brea(){
-   document.getElementById('chain').innerHTML="&#xf244;"
+     btn.addEventListener('click',()=>{
 
-   setTimeout(() => {
-    chain=document.getElementById('chain').innerHTML="&#xf243;"
-},1000);
+      let color='#'
+       
+     numbers.forEach(item=>{
+      color+=numbers[Math.floor(Math.random()*numbers.length)];
+      body.style.backgroundColor=`${color}`
+      result.innerHTML=color;
+     })
 
-setTimeout(() => {
-    chain=document.getElementById('chain').innerHTML="&#xf242;"
-},1500);
+     console.log(color)
 
-setTimeout(() => {
-    chain=document.getElementById('chain').innerHTML="&#xf241;"
-},2000);
+     
+     
 
-setTimeout(() => {
-    chain=document.getElementById('chain').innerHTML="&#xf240;"
-},2500);
-    }
+      
     
 
-
-    brea()
-
-setInterval( brea, 2000);
-  
-    
-
-    
+     })
     
     </script>
 </body>

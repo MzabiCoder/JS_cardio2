@@ -3,15 +3,15 @@
 
 // // reerange=(input)=>{
 
-    
+
 // //     let res = input.split('').sort((a, b) => a > b)
 // //     let res2=[];
 // //     //let res3=[];
 
 // //     res.forEach((val,i) => {
-      
+
 // //        if (res2.indexOf(val)==-1) res2.push(val) 
-         
+
 // //       })
 
 // //       //console.log(res3);
@@ -70,7 +70,7 @@
 // //            maxv=obj[char]
 // //            maxn=char
 // //         }
-        
+
 // //       }
 
 // //       return maxv
@@ -87,7 +87,7 @@
 //   //   let tab=str.toLowerCase().match(/[a-z0-9]+/g)
 
 //      //console.log(tab);
- 
+
 
 //   //     const sort=tab.sort((a,b)=>b.length-a.length)
 
@@ -96,19 +96,19 @@
 //   //     const filter=sort.filter(word=>word.length === sort[0].length)
 
 //   //    filter.length===1 ?  console.log(filter[0]) : console.log(filter)
-       
+
 
 //   //  }
 
 //   // //   console.log(test('i love javascriptsldkjfglsdjkglfs abcdefghig than others klmnopqrst'))
-   
+
 
 //   //  chunk=(tab,ind)=>{
-    
+
 //   //    let res=[]
 //   //    let i=0
 
-   
+
 //   //   while(i<=tab.length-1){
 
 //   //    res.push(tab.slice(i,i+ind))
@@ -123,7 +123,7 @@
 //   //    })
 
 //   //     console.log(res2);
-   
+
 
 
 //   //  }
@@ -139,10 +139,10 @@
 
 // //   //  console.log(tab1.sort())
 // //   //  console.log(tab2.sort())
-   
 
 
-   
+
+
 
 // // }
 
@@ -156,7 +156,7 @@
 
 // //  return rest.reduce((a,b)=>a+b);
 
-  
+
 
 // // }
 
@@ -170,7 +170,7 @@
 
 
 // // //      return tab.filter(val=>(rest.indexOf(val) === -1))
-     
+
 
 // // // }
 // // // //seek([2,3,4,6,6,'hello'],2,6)
@@ -203,7 +203,7 @@
 
 
 
-const express=require('express')
+const express = require('express')
 // // const jwt=require('jsonwebtoken')
 
 // // const app=express();
@@ -271,7 +271,9 @@ const express=require('express')
 // //    const express=require('express')
 // //   //const path=require('path')
 // //   //const cookieParser=require('cookie-parser')
- bodyParser=require('body-parser')
+const bodyParser = require('body-parser')
+
+
 // //   //const exphs=require('express-handlebars')
 // //   const validator=require('express-validator')
 // //   const flas=require('connect-flash')
@@ -291,8 +293,8 @@ const express=require('express')
 // //     // mongoose.connect(db,{useNewUrlParser:true})
 // //     // .then(()=>console.log('mongo db connected'))
 // //     // .catch(er=>console.log(er))
-   
-  
+
+
 
 // //  app.use(expressLayouts)
 // //  app.set('view engine','ejs')
@@ -304,7 +306,7 @@ const express=require('express')
 // //   mongoose.connection.once('open',()=>{
 // //     console.log('connected to mongoATlAS....')
 // //   })
- 
+
 
 
 // //  const PORT=process.env.PORT || 3000
@@ -318,7 +320,7 @@ const express=require('express')
 // //  const path=require('path')
 
 // //   fs.readFile(path.join(__dirname,'/test','hello.txt'),'utf8',(err,data)=>{
-   
+
 // //     if (err) throw err
 
 // //     console.log(data)
@@ -375,7 +377,7 @@ const express=require('express')
 
 
 
-  
+
 
 
 //   // function capital(str){
@@ -385,13 +387,13 @@ const express=require('express')
 //   //   .split(' ')
 //   //   .map(char=>char = char.charAt(0).toUpperCase()+char.substring(1))
 //   //   .join(' ')
-    
 
-  
+
+
 
 //   // }
 
-  
+
 
 
 //   //  function one(str){
@@ -407,7 +409,7 @@ const express=require('express')
 //   //          obj[el]=1
 //   //        }
 //   //     });
-      
+
 //   //      for (let char in obj){
 //   //        if (max<obj[char]){
 //   //          max=obj[char]
@@ -422,7 +424,7 @@ const express=require('express')
 //   //match(/[a-z0-9]+/g) string.prototype
 
 //   //  function  maxcar(str){
-     
+
 //   //    const tab=str.toLowerCase().match(/[a-z0-9]+/g)
 //   //     const sorted=tab.sort((a,b)=>b.length-a.length)
 
@@ -444,7 +446,7 @@ const express=require('express')
 //        .join('')
 //     }
 //      const isanagram=(str1,str2)=>{
- 
+
 //       return format(str1)===format(str2)
 
 
@@ -452,13 +454,13 @@ const express=require('express')
 
 
 //      function letterChanges(str) {
-      
+
 //       return str.toLowerCase().replace(/[a-z]/g, char => (
 //         char == 'z' ? 'a' : String.fromCharCode(char.charCodeAt() + 1)
 //       )).replace(/[aeiou]/g, vowel => vowel.toUpperCase());
 //     }
 
- 
+
 //  //let str="1-2+3+13"
 
 
@@ -467,7 +469,7 @@ const express=require('express')
 
 //   // let tab=[]
 //   // let sum=0
-  
+
 
 //   //  tab=str.split('')
 //   //  //return tab.reduce((a,b)=>parseInt(a)+parseInt(b))
@@ -477,19 +479,19 @@ const express=require('express')
 //   //   }else {
 
 //   //     for (let i=0;i<tab.length;i++){
-        
+
 //   //        if (tab[i]==='+'){
 //   //          sum+=parseInt(tab[i+1])
 //   //        }
-         
+
 //   //        else if (tab[i]==='-'){
 //   //         sum=sum-parseInt(tab[i+1])
 //   //       } else{
 //   //         sum+=parseInt(tab[i])
 //   //       }
-      
+
 //   //     }
-      
+
 //   //     return sum
 //   //    }
 
@@ -509,39 +511,145 @@ const express=require('express')
 //   function myreducer(state = initState,action){
 // a
 //     console.log(action,state)
-    
+
 //   }
-//   const store=createStore(myreducer)
+// //   const store=createStore(myreducer)
 
-//   const todoAction={type:'ADD_TODO',todo:'buy milk'}
+// //   const todoAction={type:'ADD_TODO',todo:'buy milk'}
 
-//   store.dispatch(initState)
+// //   store.dispatch(initState)
 
-const exphbs=require('express-handlebars')
-const nodemailer=require('nodemailer')
-const path=require('path')
-
-
-const app=express()
-// view engine
-
-app.engine('handlebars',exphbs())
-app.set('view engine','handlebars')
-
-// static folder
-app.use('/public',express.static(path.join(__dirname,'public')))
-
-app.get('/',(req,res)=>{
-  res.render('contact')
-  //res.send('hellow ')
-})
+// const exphbs=require('express-handlebars')
+// const nodemailer=require('nodemailer')
+// const path=require('path')
 
 
-app.listen(3000,()=>{
-  console.log('server is up running... ')
-})
+// const app=express()
+// // view engine
+// // parse application/x-www-form-urlencoded
+// app.use(bodyParser.urlencoded({ extended: false }))
 
-  
+// // parse application/json
+// app.use(bodyParser.json())
+
+// app.engine('handlebars',exphbs())
+// app.set('view engine','handlebars')
+
+// // static folder
+// app.use('/public',express.static(path.join(__dirname,'public')))
+
+// app.get('/',(req,res)=>{
+//   res.render('contact')
+//   //res.send('hellow ')
+// })
+
+
+
+// app.post('/send',(req,res)=>{
+// //  console.log(req.body)
+
+// const output=`
+// <p>you have new contact request</p>
+// <h3>Contact Details</h3>
+//  <ul>
+//  <li>${req.body.name}</li>
+//  <li>${req.body.company}</li>
+//  <li>${req.body.email}</li>
+//  <li>${req.body.phone}</li>
+//  </ul>
+//  <h3>Message</h3>
+//  <p>${req.body.message}</p>
+
+// `
+// nodemailer.createTestAccount();
+//  // create reusable transporter object using the default SMTP transport
+//   let transporter = nodemailer.createTransport({
+//     host: "ns6617.hostgator.com",
+//     port: 587,
+//     secure: false, // true for 465, false for other ports
+//     auth: {
+//       user: 'mzabi@fannane.online', // generated ethereal user
+//       pass: '@5nackattacK' // generated ethereal password
+//     },
+//     tls:{
+//       rejectUnauthorized:false
+//     }
+//   });
+
+//   // setup email data with unicode symbols
+//   let mailOptions = {
+//     from: '"Nodemailer" <mzabi@fannane.online>', // sender address
+//     to: "nabil@goadroit.com,nfannane41@gmail.com", // list of receivers
+//     subject: "Hello from nodemailer", // Subject line
+//     text: "Hello world?", // plain text body
+//     html: output // html body
+//   };
+
+//   // send mail with defined transport object
+//   let info =  transporter.sendMail(mailOptions)
+
+//   console.log("Message sent: %s", info.messageId);
+//   console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+
+//   res.render('contact',{msg:"Email has been sent"})
+
+
+// })
+
+
+// app.listen(3000,()=>{
+//   console.log('server is up running... ')
+// })
+
+
+
+
+// if (meeting.length == 1) {
+//   if (meeting.hours < havehrs) return meeting
+//   else {
+//     return 'no meeting for this person'
+//   }
+
+// } else {
+
+
+
+// const test = (rest) => {
+
+//   //console.log(rest.toString().split('').sort((a, b) => a - b)[2])
+//   let tab = rest.toString().split('').sort((a, b) => a - b)
+//   let val1 = rest.toString().split('').sort((a, b) => a - b)[0];
+
+//   console.log(tab.filter(val => val != val1)[0])
+
+
+// }
+
+// test(87351037456)
+
+
+// test=(str)=>{
+
+
+//   let tab=str.toLowerCase().replace(/[a-b]+/g)
+
+
+// }
+
+
+let s='Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eaque voluptatem rem repudiandae porro perspiciatis at tempora asperiores deleniti et sapiente excepturi temporibus est soluta, animi ipsum necessitatibus cum optio'
+
+    const result=s.split(/(\w+)/)
+
+    console.log(result)
+
+    
+
+
+
+
+
+
 
 
 

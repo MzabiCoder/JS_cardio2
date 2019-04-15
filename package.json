@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Mzabi1982/JS_cardio2#readme",
   "dependencies": {
+    "await": "^0.2.6",
     "bcryptjs": "*",
     "body-parser": "*",
     "connect-flash": "*",

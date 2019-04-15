@@ -212,7 +212,7 @@ hr {
  */
 
 
- *{
+ /* *{
      box-sizing: border-box
  }
  body{
@@ -324,5 +324,5 @@ hr {
         grid-template-columns: 1.4fr 3fr;
        
     }
-  }
+  } */
  
