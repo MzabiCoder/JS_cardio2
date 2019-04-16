@@ -637,11 +637,17 @@ const bodyParser = require('body-parser')
 // }
 
 
-let s='Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eaque voluptatem rem repudiandae porro perspiciatis at tempora asperiores deleniti et sapiente excepturi temporibus est soluta, animi ipsum necessitatibus cum optio'
+// let s='Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eaque voluptatem rem repudiandae porro perspiciatis at tempora asperiores deleniti et sapiente excepturi temporibus est soluta, animi ipsum necessitatibus cum optio'
 
-    const result=s.split(/(\w+)/)
+//     const result=s.split(/(\w+)/)
 
-    console.log(result)
+//     console.log(result)
+
+
+str='asdfjk asdfjghadf ajdfhgasf ajsdfgasjdfg asfjasfj gaf sjafgasj'
+number=/b{3}-b{3}-b{4}/
+
+ console.log(number.test(123-234-4567))
 
     
 
