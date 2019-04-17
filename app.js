@@ -637,22 +637,19 @@ const bodyParser = require('body-parser')
 // }
 
 
-// let s='Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eaque voluptatem rem repudiandae porro perspiciatis at tempora asperiores deleniti et sapiente excepturi temporibus est soluta, animi ipsum necessitatibus cum optio'
 
-//     const result=s.split(/(\w+)/)
 
-//     console.log(result)
+ const reverse=(tab)=>{
+   
+ 
+    
 
- //const regex=/\(?\d{3}\)?[-.]\d{4}[.-]\d{4}/
+ }
+
+
+ console.log(reverse('hhhhhhhhhh skuhfgsd jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj askdfh llllllllll askdfh'))
+
   
- const s='sdkjfh 415-675-2736 sdfjkhasdf kadfhkaqfhasd  415.675-2736 adfskjhaksfdka (415)-675-2736'
-
-  const result=s.replace(/\(?\d{3}[-.]\)?\d{3}\d{4}/g,(match)=>{
-      
-        if(match) return 'xxx-xxx-xxxx'
-  })
-
-  console.log(result)
 
     
 
