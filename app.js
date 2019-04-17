@@ -643,11 +643,20 @@ const bodyParser = require('body-parser')
 
 //     console.log(result)
 
+ //const regex=/\(?\d{3}\)?[-.]\d{4}[.-]\d{4}/
+  
+ const s='sdkjfh 415-675-2736 sdfjkhasdf kadfhkaqfhasd  415.675-2736 adfskjhaksfdka (415)-675-2736'
 
-str='asdfjk asdfjghadf ajdfhgasf ajsdfgasjdfg asfjasfj gaf sjafgasj'
-number=/b{3}-b{3}-b{4}/
+  const result=s.replace(/\(?\d{3}[-.]\)?\d{3}\d{4}/g,(match)=>{
+      
+        if(match) return 'xxx-xxx-xxxx'
+  })
 
- console.log(number.test(123-234-4567))
+  console.log(result)
+
+    
+
+
 
     
 
