@@ -638,16 +638,30 @@ const bodyParser = require('body-parser')
 
 
 
-
- const reverse=(tab)=>{
-   
+let index=[]
+let values=[]
  
-    
+ let tab=[-1,290,340,-1,170,-1,-1,200,380]
 
- }
+   tab.forEach((tab,i)=>{
+    if (tab === -1){
+        index.push(i)
+      }else {
+          values.push(tab)
+      }
 
+   })
 
- console.log(reverse('hhhhhhhhhh skuhfgsd jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj askdfh llllllllll askdfh'))
+  let sort=values.sort()
+
+   index.forEach(tab=>{
+    sort.splice(tab,0,-1)
+   })
+ 
+ 
+   console.log(sort)
+
+   
 
   
 
