@@ -1,43 +1,20 @@
-tab = [
-  'a',
-  'b',
-  'c',
-  'd',
-  'c',
-  'a',
-  'c',
-  'd',
-  'b',
-  'c',
-  'd',
-  'd',
-  'g',
-  'k',
-  'l',
-  'k',
-  'g',
-  'c',
-  'd',
-  'g',
-  'c',
-  'd',
-  'g'
-];
+str =
+  'skfgh karim karim dsfk@jhadsf nabil nabil karim adsfks___addkfa dflakfak/w* karim hhhhhhh12hhhhhhhh#@hhhhhh)hhh adsfaidfaf karim #$ aliufaif nabil';
+
+const tab = str.match(/[a-bA-Z]+/gi);
 
 let obj = {};
 
-for (let val of tab) {
-  if (obj[val]) {
-    obj[val]++;
+for (let i = 0; i < tab.length; i++) {
+  if (obj[tab[i]]) {
+    obj[tab[i]]++;
   } else {
-    obj[val] = 1;
+    obj[tab[i]] = 1;
   }
 }
-
-let tab2 = [];
-
+let sorted = [];
 for (let val in obj) {
-  tab2.push([val, obj[val]]);
+  sorted.push([obj[val], val]);
 }
 
-console.log(tab2.sort((a, b) => b[1] - a[1])[0].join(':'));
+console.log(sorted.sort((a, b) => b[0] - a[0])[0]);
