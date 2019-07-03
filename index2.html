@@ -5,8 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Document</title>
 </head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .tabs {
+        background: #141414;
+        width: 100%;
+        border-bottom: 3px solid #3d3d3d;
+    }
+
+    #tab-1-content,
+    #tab-2-content,
+    #tab-3-content {
+        display: none;
+    }
+
+    .show {
+        display: block !important
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .container div {
+        padding: 1rem 0;
+    }
+
+    .tab-content .container div {
+        color: black
+    }
+
+    .tabs .container div:hover {
+        color: red;
+        cursor: pointer;
+    }
+
+
+
+    .tab-border {
+        border-bottom: solid 2px gold;
+    }
+</style>
 
 <body>
 
@@ -15,11 +72,74 @@
 
             <div id="tab-1" class="tab-item tab-border">
                 <i class="fas fa-door-open fa-3x"></i>
+                <p class="hide-sm">Cancel any time</p>
+            </div>
+
+            <div id="tab-2" class="tab-item ">
+                <i class="fas fa-door-open fa-3x"></i>
+                <p class="hide-sm">Cancel any time</p>
+            </div>
+
+            <div id="tab-3" class="tab-item ">
+                <i class="fas fa-door-open fa-3x"></i>
+                <p class="hide-sm">Cancel any time</p>
             </div>
 
         </div>
     </section>
+    <section class="tab-content">
 
+        <div class="container">
+            <div class="tab-content-item show" id="tab-1-content">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet minus temporibus
+                    voluptate! Repudiandae consequuntur blanditiis dolorem perferendis possimus? Ut?</h1>
+                <img width="200px" height="200px" src="http://fannane.online/img/fmain.jpg" alt="">
+            </div>
+
+            <div id="tab-2-content" class="tab-content-item">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet minus temporibus
+                    voluptate! Repudiandae consequuntur blanditiis dolorem perferendis possimus? Ut?</h1>
+                <img width="200px" height="200px"
+                    src="data:image/png;base64,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"
+                    alt="">
+            </div>
+
+            <div id="tab-3-content" class="tab-content-item">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet minus temporibus
+                    voluptate! Repudiandae consequuntur blanditiis dolorem perferendis possimus? Ut?</h1>
+                <img width="200px" height="200px"
+                    src="data:image/png;base64,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"
+                    alt="">
+            </div>
+    </section>
+
+
+    <script>
+        const tabItems = document.querySelectorAll('.tab-item')
+        const tabContent = document.querySelectorAll('.tab-content-item')
+
+        tabItems.forEach(item => {
+            item.addEventListener('click', e => {
+                tabItems.forEach(val => {
+                    val.classList.remove('tab-border')
+                })
+
+
+                tabContent.forEach(val => {
+                    val.classList.remove('show')
+                })
+                let content = document.querySelector(`#${e.target.id}-content`)
+                content.classList.add('show')
+
+
+                item.classList.add('tab-border')
+
+            })
+
+
+
+        })
+    </script>
 </body>
 
 </html>
