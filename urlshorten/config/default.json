@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb://user1:nabil1982@ds349587.mlab.com:49587/urlshorten",
+    "baseUrl": "http://localhost:5000"
+}

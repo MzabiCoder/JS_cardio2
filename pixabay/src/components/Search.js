@@ -3,6 +3,7 @@ import TextField from 'material-ui/TextField';
 import Select from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 import axios from 'axios';
+import Result from './Result'
 
 
 class Search extends Component{
@@ -14,6 +15,8 @@ class Search extends Component{
           apiUrl:'https://pixabay.com/api/',
           images:[]
       }
+
+      amount=(e,index,value)=>this.setState({amount:value})
 
       onchange=(e)=>{
           this.setState({
@@ -53,6 +56,9 @@ class Search extends Component{
           <MenuItem value={10}>10</MenuItem>
           <MenuItem value={15}>15</MenuItem>
         </Select>
+
+
+        {this.state.images.length > 0 ? <Result images={this.state.images}/>:null }
          </div>
     
         )
