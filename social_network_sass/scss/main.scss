@@ -1,3 +1,95 @@
-body{
-    background: red;
+@import 'config';
+@import 'utilities';
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    border-bottom: solid 1px $primary-color;
+    opacity: .8;
+    padding: 1rem 0;
+
+    #title {
+        color: white !important;
+    }
+
+
+    ul {
+        display: flex;
+        margin-right: 2rem;
+
+        a {
+            padding: .5rem;
+            margin: 0 .3rem;
+            color: white;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+    }
+}
+
+.landing {
+    position: relative;
+    background: url('https://images.pexels.com/photos/2346091/pexels-photo-2346091.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500') no-repeat center center / cover;
+    width: 100%;
+    height: 100vh;
+
+    &-inner {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        h1,
+        p {
+            color: white;
+        }
+    }
+
+
+
+
+
 }

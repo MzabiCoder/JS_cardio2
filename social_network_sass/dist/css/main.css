@@ -1,2 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem; }
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
+
+.bg-primary {
+  background-color: #17a2b8;
+  color: #fff; }
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+  border: #ccc solid 1px; }
+
+.bg-dark {
+  background-color: #343a40;
+  color: #fff; }
+
+.bg-success {
+  background-color: #28a745;
+  color: #fff; }
+
+.bg-danger {
+  background-color: #dc3545;
+  color: #333; }
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+  border: #ccc solid 1px; }
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh; }
+
+.btn {
+  display: inline-block;
+  background: #f4f4f4;
+  color: #333;
+  padding: .7rem 1.2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: .4rem;
+  outline: none;
+  transition: all .7s ease-in-out; }
+  .btn.btn-primary {
+    background-color: #17a2b8;
+    color: #fff; }
+    .btn.btn-primary:hover {
+      background: #1fc8e3; }
+  .btn.btn-light {
+    background-color: #343a40;
+    color: #fff; }
+    .btn.btn-light:hover {
+      background: #4b545c; }
+
+*,
 body {
-  background: red; }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #17a2b8; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+img {
+  width: 100%; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px #17a2b8;
+  opacity: .8;
+  padding: 1rem 0; }
+  .navbar #title {
+    color: white !important; }
+  .navbar ul {
+    display: flex;
+    margin-right: 2rem; }
+    .navbar ul a {
+      padding: .5rem;
+      margin: 0 .3rem;
+      color: white; }
+      .navbar ul a:hover {
+        color: #17a2b8; }
+
+.landing {
+  position: relative;
+  background: url("https://images.pexels.com/photos/2346091/pexels-photo-2346091.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh; }
+  .landing-inner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+    .landing-inner h1,
+    .landing-inner p {
+      color: white; }

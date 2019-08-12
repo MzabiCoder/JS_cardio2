@@ -1,0 +1,82 @@
+.x-large {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+// background 
+.bg {
+    &-primary {
+        @include set-background($primary-color)
+    }
+
+    &-light {
+        @include set-background($light-color);
+        border: #ccc solid 1px;
+    }
+
+    &-dark {
+        @include set-background($dark-color)
+    }
+
+    &-success {
+        @include set-background($success-color)
+    }
+
+    &-danger {
+        @include set-background($danger-color)
+    }
+
+    &-light {
+        @include set-background($light-color);
+        border: #ccc solid 1px;
+    }
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100vh;
+}
+
+// buttons
+
+.btn {
+    display: inline-block;
+    background: $light-color;
+    color: #333;
+    padding: .7rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: .4rem;
+    outline: none;
+    transition: all .7s ease-in-out;
+
+    &.btn-primary {
+        @include set-background($primary-color);
+
+        &:hover {
+            background: lighten($primary-color, 10%)
+        }
+    }
+
+    &.btn-light {
+        @include set-background($dark-color) &:hover {
+            background: lighten($dark-color, 10%)
+        }
+    }
+
+
+
+}
