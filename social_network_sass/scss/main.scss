@@ -1,13 +1,13 @@
 @import 'config';
 @import 'utilities';
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import 'form';
 
 *,
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
     font-size: 1rem;
     line-height: 1.4;
     color: #333;
@@ -92,4 +92,116 @@ img {
 
 
 
+}
+
+// profile
+
+.profile {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    align-items: center;
+    grid-gap: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    div {
+        line-height: 1.6;
+
+    }
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-areas: 'top top''about about''exp edu''github github';
+    grid-gap: 1rem;
+
+    .profile-top {
+        grid-area: top;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        img {
+            width: 250px;
+        }
+
+        .icons {
+            a i {
+                color: white;
+                margin: .7rem;
+                transition: all .8s ease-in-out;
+
+                &:hover {
+                    color: #333;
+                }
+
+            }
+
+            display: flex;
+
+        }
+
+    }
+
+    .profile-about {
+        grid-area: about;
+        text-align: center;
+
+        .skills {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .profile-exp {
+        grid-area: exp;
+    }
+
+    .profile-github {
+        grid-area: github;
+
+        .repo {
+            display: flex;
+
+            &>div {
+                flex: 7;
+
+
+            }
+
+            &>div:last-child {
+                flex: 2;
+                text-align: center;
+
+
+            }
+        }
+    }
+
+    .profile-exp div,
+    .profile-edu div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: #ccc 1px dotted;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        p {
+            margin: .4rem 0;
+        }
+    }
+
+
+
+    .profile-edu {
+        grid-area: edu;
+
+
+    }
 }

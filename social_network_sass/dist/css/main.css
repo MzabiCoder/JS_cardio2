@@ -1,6 +1,83 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+.m-1 {
+  margin: 1rem; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.p-1 {
+  padding: 1rem; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.m-2 {
+  margin: 2rem; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.p-2 {
+  padding: 2rem; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.m-3 {
+  margin: 3rem; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.p-3 {
+  padding: 3rem; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.m-4 {
+  margin: 4rem; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+.p-4 {
+  padding: 4rem; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.m-5 {
+  margin: 5rem; }
+
+.my-5 {
+  margin: 5rem 0; }
+
+.p-5 {
+  padding: 5rem; }
+
+.py-5 {
+  padding: 5rem 0; }
+
+.m-6 {
+  margin: 6rem; }
+
+.my-6 {
+  margin: 6rem 0; }
+
+.p-6 {
+  padding: 6rem; }
+
+.py-6 {
+  padding: 6rem 0; }
+
 .x-large {
   font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem; }
+
+.large {
+  font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1rem; }
 
@@ -27,7 +104,7 @@
 
 .bg-danger {
   background-color: #dc3545;
-  color: #333; }
+  color: #fff; }
 
 .bg-light {
   background-color: #f4f4f4;
@@ -59,19 +136,95 @@
     background-color: #17a2b8;
     color: #fff; }
     .btn.btn-primary:hover {
-      background: #1fc8e3; }
+      background: #4cd3e9;
+      color: #333; }
   .btn.btn-light {
     background-color: #343a40;
     color: #fff; }
     .btn.btn-light:hover {
-      background: #4b545c; }
+      background: #96a0aa;
+      color: #333; }
+
+.container {
+  width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 7rem; }
+
+.text-primary {
+  color: #17a2b8; }
+
+.alert {
+  padding: 1rem;
+  margin: 1rem;
+  opacity: .8;
+  background: #f4f4f4;
+  color: #333; }
+  .alert.alert-primary {
+    background-color: #17a2b8;
+    color: #fff; }
+  .alert.alert-primary {
+    background-color: #343a40;
+    color: #fff; }
+  .alert.alert-primary {
+    background-color: #28a745;
+    color: #fff; }
+  .alert.alert-danger {
+    background-color: #dc3545;
+    color: #fff; }
+
+.rounded {
+  width: 100%;
+  border-radius: 50%; }
+
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 1.2rem 0; }
+
+.badge {
+  font-size: .7rem;
+  padding: .1rem;
+  text-align: center;
+  margin: .3rem;
+  background-color: lightgrey;
+  color: #333; }
+  .badge.badge-primary {
+    background-color: #17a2b8;
+    color: #fff; }
+  .badge.badge-dark {
+    background-color: #343a40;
+    color: #fff; }
+  .badge.badge-light {
+    background-color: #f4f4f4;
+    color: #333; }
+
+.form-group {
+  margin: 1.2rem 0; }
+
+.form-text {
+  display: block;
+  margin-top: .4rem;
+  color: #888;
+  font-weight: none; }
+
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='date'] {
+  display: block;
+  width: 100%;
+  padding: .6rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 1px solid #ccc; }
 
 *,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
   font-size: 1rem;
   line-height: 1.4;
   color: #333;
@@ -130,3 +283,67 @@ img {
     .landing-inner h1,
     .landing-inner p {
       color: white; }
+
+.profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  align-items: center;
+  grid-gap: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem; }
+  .profile div {
+    line-height: 1.6; }
+
+.profile-grid {
+  display: grid;
+  grid-template-areas: "top top" "about about" "exp edu" "github github";
+  grid-gap: 1rem; }
+  .profile-grid .profile-top {
+    grid-area: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .profile-grid .profile-top img {
+      width: 250px; }
+    .profile-grid .profile-top .icons {
+      display: flex; }
+      .profile-grid .profile-top .icons a i {
+        color: white;
+        margin: .7rem;
+        transition: all .8s ease-in-out; }
+        .profile-grid .profile-top .icons a i:hover {
+          color: #333; }
+  .profile-grid .profile-about {
+    grid-area: about;
+    text-align: center; }
+    .profile-grid .profile-about .skills {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center; }
+  .profile-grid .profile-exp {
+    grid-area: exp; }
+  .profile-grid .profile-github {
+    grid-area: github; }
+    .profile-grid .profile-github .repo {
+      display: flex; }
+      .profile-grid .profile-github .repo > div {
+        flex: 7; }
+      .profile-grid .profile-github .repo > div:last-child {
+        flex: 2;
+        text-align: center; }
+  .profile-grid .profile-exp div,
+  .profile-grid .profile-edu div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: #ccc 1px dotted; }
+    .profile-grid .profile-exp div:last-child,
+    .profile-grid .profile-edu div:last-child {
+      border-bottom: none; }
+    .profile-grid .profile-exp div p,
+    .profile-grid .profile-edu div p {
+      margin: .4rem 0; }
+  .profile-grid .profile-edu {
+    grid-area: edu; }

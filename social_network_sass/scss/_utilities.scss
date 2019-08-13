@@ -4,6 +4,12 @@
     margin-bottom: 1rem;
 }
 
+.large {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
 .lead {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -67,16 +73,90 @@
         @include set-background($primary-color);
 
         &:hover {
-            background: lighten($primary-color, 10%)
+            background: lighten($primary-color, 20%);
+            color: #333;
         }
     }
 
     &.btn-light {
-        @include set-background($dark-color) &:hover {
-            background: lighten($dark-color, 10%)
+        @include set-background($dark-color);
+
+        &:hover {
+            background: lighten($dark-color, 40%);
+            color: #333;
         }
     }
 
 
 
+}
+
+.container {
+    width: $max-width;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    margin-top: 7rem;
+
+}
+
+.text-primary {
+    color: $primary-color;
+}
+
+.alert {
+    padding: 1rem;
+    margin: 1rem;
+    opacity: .8;
+    background: $light-color;
+    color: #333;
+
+    &.alert-primary {
+        @include set-background($primary-color)
+    }
+
+    &.alert-primary {
+        @include set-background($dark-color)
+    }
+
+    &.alert-primary {
+        @include set-background($success-color)
+    }
+
+    &.alert-danger {
+        @include set-background($danger-color)
+    }
+}
+
+.rounded {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.line {
+    height: 1px;
+    background: #ccc;
+    margin: 1.2rem 0;
+
+}
+
+.badge {
+    font-size: .7rem;
+    padding: .1rem;
+    text-align: center;
+    margin: .3rem;
+    background-color: lightgrey;
+    color: #333;
+
+    &.badge-primary {
+        @include set-background($primary-color)
+    }
+
+    &.badge-dark {
+        @include set-background($dark-color)
+    }
+
+    &.badge-light {
+        @include set-background($light-color)
+    }
 }
