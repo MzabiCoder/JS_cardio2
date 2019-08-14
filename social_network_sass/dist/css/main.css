@@ -200,6 +200,16 @@
     background-color: #f4f4f4;
     color: #333; }
 
+.table th,
+td {
+  padding: 1rem;
+  text-align: left;
+  background-color: #333;
+  color: white; }
+  .table th th,
+  td th {
+    background-color: #333; }
+
 .form-group {
   margin: 1.2rem 0; }
 
@@ -219,6 +229,15 @@
   font-size: 1.3rem;
   font-weight: bold;
   border: 1px solid #ccc; }
+
+.form .social-input {
+  display: flex; }
+  .form .social-input i {
+    padding: 1rem;
+    font-size: 3rem;
+    transition: all .8s ease-in-out; }
+    .form .social-input i:hover {
+      color: #17a2b8; }
 
 *,
 body {
@@ -347,3 +366,12 @@ img {
       margin: .4rem 0; }
   .profile-grid .profile-edu {
     grid-area: edu; }
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column; }
+    .navbar ul {
+      margin: 0 auto; }
+    .navbar h1 {
+      padding-bottom: 1rem;
+      text-align: center; } }

@@ -160,3 +160,15 @@
         @include set-background($light-color)
     }
 }
+
+.table th,
+td {
+    padding: 1rem;
+    text-align: left;
+    background-color: #333;
+    color: white;
+
+    th {
+        background-color: #333;
+    }
+}

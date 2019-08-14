@@ -22,4 +22,19 @@
         font-weight: bold;
         border: 1px solid #ccc;
     }
+
+    .social-input {
+        display: flex;
+
+        i {
+            padding: 1rem;
+            font-size: 3rem;
+            transition: all .8s ease-in-out;
+
+            &:hover {
+                color: $primary-color;
+
+            }
+        }
+    }
 }

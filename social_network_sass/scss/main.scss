@@ -205,3 +205,18 @@ img {
 
     }
 }
+
+@media (max-width:600px) {
+    .navbar {
+        flex-direction: column;
+
+        ul {
+            margin: 0 auto;
+        }
+
+        h1 {
+            padding-bottom: 1rem;
+            text-align: center;
+        }
+    }
+}
