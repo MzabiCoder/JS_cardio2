@@ -1,8 +1,22 @@
 const heading = document.querySelector('.heading')
-const loading = document.querySelector('loading')
+
 
 
 document.getElementById('loan').addEventListener('submit', e => {
+    document.querySelector('#loading').style.display = 'block'
+
+    setTimeout(() => {
+
+
+        calcul();
+
+    }, 2000);
+
+    e.preventDefault()
+})
+
+function calcul() {
+
     const amount = document.getElementById('amount')
     const interest = document.getElementById('interest')
     const years = document.getElementById('years')
@@ -20,6 +34,8 @@ document.getElementById('loan').addEventListener('submit', e => {
 
     const x = Math.pow(1 + calculatedInterest, caculatedPayment)
     const monthly = (principal * x * calculatedInterest) / (x - 1)
+    document.querySelector('#reaults').style.display = 'block'
+    document.querySelector('#loading').style.display = 'none'
 
     if (isFinite(monthly)) {
         monthly_payment.value = monthly.toFixed(2)
@@ -27,12 +43,14 @@ document.getElementById('loan').addEventListener('submit', e => {
         total_interest.value = ((monthly * caculatedPayment) - principal).toFixed(2)
     } else {
         showErro('Please check your numbers')
+        document.querySelector('#reaults').style.display = 'none'
+
     }
 
 
 
-    e.preventDefault()
-})
+
+}
 
 const showErro = (message) => {
     const res = document.querySelector('#res')
