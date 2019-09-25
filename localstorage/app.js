@@ -24,9 +24,47 @@ function LoadAll() {
         link.innerHTML = '<i class="fa fa-remove"></i>'
         li.appendChild(link)
         tasklist.appendChild(li)
+
+
+        // local storage
+        Storage(taskInput.value)
+
         taskInput.value = ''
         e.preventDefault()
     })
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let tasks;
+        if (localStorage.getItem('tasks') === null) {
+            tasks = []
+        } else {
+            tasks = JSON.parse(localStorage.getItem('tasks'))
+        }
+
+        tasks.forEach(task => {
+            const li = document.createElement('li')
+            li.className = 'collection-item'
+            li.appendChild(document.createTextNode(task))
+
+            const link = document.createElement('a')
+            link.className = 'delete-item secondary-content'
+            link.innerHTML = '<i class="fa fa-remove"></i>'
+            li.appendChild(link)
+            tasklist.appendChild(li)
+        })
+    })
+
+    const Storage = (task) => {
+        let tasks;
+        if (localStorage.getItem('tasks') === null) {
+            tasks = []
+        } else {
+            tasks = JSON.parse(localStorage.getItem('tasks'))
+        }
+        tasks.push(task)
+        localStorage.setItem('tasks', JSON.stringify(tasks))
+    }
+
 
 
     tasklist.addEventListener('click', e => {
@@ -35,9 +73,28 @@ function LoadAll() {
             if (confirm('Are you sure...')) {
                 e.target.parentElement.parentElement.remove()
 
+                removeE(e.target.parentElement.parentElement)
+
             }
         }
     })
+
+    function removeE(taskItem) {
+        let tasks;
+        if (localStorage.getItem('tasks') === null) {
+            tasks = []
+        } else {
+            tasks = JSON.parse(localStorage.getItem('tasks'))
+        }
+
+        tasks.forEach((task, i) => {
+            if (taskItem.textContent === task) {
+                tasks.splice(i, 1)
+            }
+        })
+
+        localStorage.setItem('tasks', JSON.stringify('tasks'))
+    }
 
     clearBtn.addEventListener('click', e => {
         while (tasklist.firstChild) {
@@ -64,3 +121,4 @@ function LoadAll() {
 
 
 }
+
