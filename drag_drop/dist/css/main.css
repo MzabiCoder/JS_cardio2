@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: gray; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+.btn-menu {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  cursor: pointer; }
+  .btn-menu.close {
+    transform: rotate(180deg);
+    transition: all 0.7s ease-in-out; }
+    .btn-menu.close .btn-lin:nth-child(2) {
+      display: none; }
+    .btn-menu.close .btn-lin:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .btn-menu.close .btn-lin:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
+.btn-lin {
+  width: 70px;
+  height: 6px;
+  margin-bottom: 5px;
+  background: #7e5757; }
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+  .menu-branding, .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
